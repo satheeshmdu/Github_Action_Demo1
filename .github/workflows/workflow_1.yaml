@@ -9,7 +9,13 @@ jobs:
   buildjob1:
     runs-on: ubuntu-latest
     steps:
-    - name: buildstep1
+    - name: buildstep1_1
       uses: actions/checkout@v4
-    - name: buildstep2
+    - name: buildstep1_2
+      uses: actions/checkout@v4
+
+  buildjob2:
+    runs-on: macos-latest
+    steps:
+    - name: buildstep2_1
       uses: actions/checkout@v4
